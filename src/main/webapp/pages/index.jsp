@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%--<%@taglib prefix="s" uri="/struts-tags" %>--%>
+<%@taglib prefix="mtw" uri="http://www.mentaframework.org/tags-mtw/"%>
 
 <!DOCTYPE html>
 <html>

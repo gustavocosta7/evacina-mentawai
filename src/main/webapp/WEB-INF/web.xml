@@ -3,7 +3,24 @@
   <display-name>evacina-menta</display-name>
   <welcome-file-list>
     
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>/pages/index.jsp</welcome-file>
     
   </welcome-file-list>
+  
+  <!-- The Mentawai controller -->
+    <servlet>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>org.mentawai.core.Controller</servlet-class>
+        <init-param>
+            <param-name>applicationManager</param-name>
+            <param-value>br.ifam.controller.Index</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+ 
+     <!-- You must choose an extension to indicate a mentawai action -->
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>*.mtw</url-pattern>
+    </servlet-mapping>
 </web-app>
